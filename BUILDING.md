@@ -15,8 +15,8 @@ Build Requirements
 - NASM or YASM (if building x86 or x86-64 SIMD extensions)
   * If using NASM, 0.98, or 2.01 or later is required for an x86 build (0.99
     and 2.00 do not work properly with libjpeg-turbo's x86 SIMD code.)
-  * If using NASM, 2.10 or later is required for an x86-64 build.
-  * If using NASM, 2.10 or later (except 2.11.08) is required for an x86-64
+  * If using NASM, 2.10.01 or later is required for an x86-64 build.
+  * If using NASM, 2.10.01 or later (except 2.11.08) is required for an x86-64
     Mac build (2.11.08 does not work properly with libjpeg-turbo's x86-64 SIMD
     code when building macho64 objects.)  NASM or YASM can be obtained from
     [MacPorts](http://www.macports.org/).
@@ -206,7 +206,7 @@ Add
 
     --host x86_64-apple-darwin NASM=/opt/local/bin/nasm
 
-to the `configure` command line.  NASM 2.10 or later from MacPorts must be
+to the `configure` command line.  NASM 2.10.01 or later from MacPorts must be
 installed.
 
 
@@ -227,7 +227,7 @@ Add
       CFLAGS='-mmacosx-version-min=10.5 -O3' \
       LDFLAGS='-mmacosx-version-min=10.5'
 
-to the `configure` command line.  NASM 2.10 or later from MacPorts must be
+to the `configure` command line.  NASM 2.10.01 or later from MacPorts must be
 installed.
 
 
@@ -463,7 +463,7 @@ Build Requirements
 
 - [NASM](http://www.nasm.us) or [YASM](http://yasm.tortall.net)
   * If using NASM, 0.98 or later is required for an x86 build.
-  * If using NASM, 2.10 or later is required for an x86-64 build.
+  * If using NASM, 2.10.01 or later is required for an x86-64 build.
   * If using YASM, 1.2.0 or later is required for an x86-64 build.
   * nasm.exe/yasm.exe should be in your `PATH`.
 
