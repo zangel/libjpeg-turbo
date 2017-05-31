@@ -43,7 +43,7 @@ double gettime(void)
 {
 	LARGE_INTEGER t;
 	if(f<0.0) f=getfreq();
-	if(f==0.0) return (double)GetTickCount()/1000.;
+	if(f==0.0) return (double)GetTickCount64()/1000.;
 	else
 	{
 		QueryPerformanceCounter(&t);
